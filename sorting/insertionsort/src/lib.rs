@@ -26,4 +26,11 @@ mod tests {
         super::sort(&mut strings);
         assert_eq!(strings, ["are", "hey", "how", "today", "you"]);
     }
+
+    #[test]
+    fn sorts_chars() {
+        let mut chars : [char; 13] = ['I', 'N', 'S', 'E', 'R', 'T', 'I', 'O', 'N', 'S', 'O', 'R', 'T'];
+        super::sort(&mut chars);
+        assert_eq!(chars, ['E', 'I', 'I', 'N', 'N', 'O', 'O', 'R', 'R', 'S', 'S', 'T', 'T']);
+    }
 }
