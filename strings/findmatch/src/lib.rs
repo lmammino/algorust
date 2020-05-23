@@ -6,7 +6,7 @@ pub fn findmatch(needle: String, haystack: String) -> Option<usize> {
         for i in 0..=h.wrapping_sub(n) {
             let mut j = 0;
             while j < n && haystack[i + j..=i + j] == needle[j..=j] {
-                j = j + 1;
+                j += 1;
             }
             if j == n {
                 return Some(i);
