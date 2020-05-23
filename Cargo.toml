@@ -1,4 +1,5 @@
 [workspace]
 members = [
   "sorting/insertionsort",
+  "sorting/selectionsort",
 ]
