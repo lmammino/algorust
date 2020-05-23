@@ -1,0 +1,25 @@
+on:
+  push:
+    branches:
+      - '**'
+    tags-ignore:
+      - "*"
+
+jobs:
+  linting-and-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/cache@v1
+        with:
+          path: ~/.cargo/registry
+          key: ${{ runner.os }}-cargo-registry-${{ hashFiles('**/Cargo.lock') }}
+      - name: Clippy
+        run: |
+          rustup component add clippy
+          cargo clippy --all-targets --all-features -- -D warnings
+      - name: Rustfmt
+        run: cargo fmt -- --check
+      - name: Unit tests
+        run: cargo test --verbose
+  
