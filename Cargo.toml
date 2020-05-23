@@ -2,4 +2,5 @@
 members = [
   "sorting/insertionsort",
   "sorting/selectionsort",
+  "strings/findmatch"
 ]
