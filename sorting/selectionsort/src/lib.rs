@@ -3,8 +3,8 @@ where
     T: Ord,
 {
     for i in 0..values.len() {
-        let mut min=i;
-        for j in i+1..values.len() {
+        let mut min = i;
+        for j in i + 1..values.len() {
             if values[j] < values[min] {
                 min = j;
             }
