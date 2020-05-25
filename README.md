@@ -2,7 +2,7 @@
 
 [![test](https://github.com/lmammino/algorust/workflows/test/badge.svg)](https://github.com/lmammino/algorust/actions?query=workflow%3Atest)
 
-Randomly playing with algorithms and Rust as I read through [The Algorithm Deisgn Manual by S. Skiena](https://www.amazon.co.uk/Algorithm-Design-Manual-Steven-Skiena/dp/1849967202)
+Randomly playing with algorithms and Rust as I read through [The Algorithm Design Manual by S. Skiena](https://www.amazon.co.uk/Algorithm-Design-Manual-Steven-Skiena/dp/1849967202)
 
 ## Contributing
 
